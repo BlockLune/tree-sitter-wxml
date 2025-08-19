@@ -50,3 +50,6 @@ zig-out/
 
 # macOS
 .DS_Store
+
+# Reference Dir
+tree-sitter-html/
