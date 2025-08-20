@@ -100,7 +100,18 @@ module.exports = grammar({
       ),
 
     _interpolation_text: ($) =>
-      repeat1(choice(token.immediate(prec(1, /[^{}]+/)), $.interpolation)),
+      repeat1(choice(
+        token.immediate(prec(1, /[^{}]+/)),
+        $.interpolation,
+        $._js_brace_expression
+      )),
+
+    _js_brace_expression: ($) =>
+      seq(
+        token.immediate('{'),
+        optional($._interpolation_text),
+        token.immediate('}')
+      ),
 
     import_statement: ($) =>
       prec(2, seq("<", alias(token("import"), $.tag_name), repeat($.attribute), "/>")),
