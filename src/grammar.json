@@ -399,9 +399,44 @@
           {
             "type": "SYMBOL",
             "name": "interpolation"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "_js_brace_expression"
           }
         ]
       }
+    },
+    "_js_brace_expression": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "STRING",
+            "value": "{"
+          }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_interpolation_text"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "STRING",
+            "value": "}"
+          }
+        }
+      ]
     },
     "import_statement": {
       "type": "PREC",
