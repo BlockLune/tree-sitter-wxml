@@ -4,7 +4,7 @@ endif
 
 LANGUAGE_NAME := tree-sitter-wxml
 HOMEPAGE_URL := https://github.com/blocklune/tree-sitter-wxml
-VERSION := 0.1.1
+VERSION := 0.2.0
 
 # repository
 SRC_DIR := src
