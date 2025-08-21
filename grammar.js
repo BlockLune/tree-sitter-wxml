@@ -96,9 +96,9 @@ module.exports = grammar({
 
     interpolation: ($) =>
       seq(
-        $._interpolation_start,
+        alias($._interpolation_start, $.interpolation_start),
         optional(alias($._interpolation_text, $.expression)),
-        $._interpolation_end,
+        alias($._interpolation_end, $.interpolation_end),
       ),
 
     _interpolation_text: ($) =>

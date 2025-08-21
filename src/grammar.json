@@ -354,8 +354,13 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "_interpolation_start"
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_interpolation_start"
+          },
+          "named": true,
+          "value": "interpolation_start"
         },
         {
           "type": "CHOICE",
@@ -375,8 +380,13 @@
           ]
         },
         {
-          "type": "SYMBOL",
-          "name": "_interpolation_end"
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_interpolation_end"
+          },
+          "named": true,
+          "value": "interpolation_end"
         }
       ]
     },

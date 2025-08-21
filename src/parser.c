@@ -108,8 +108,8 @@ static const char * const ts_symbol_names[] = {
   [sym__end_tag_name] = "tag_name",
   [sym_raw_text] = "raw_text",
   [sym_comment] = "comment",
-  [sym__interpolation_start] = "_interpolation_start",
-  [sym__interpolation_end] = "_interpolation_end",
+  [sym__interpolation_start] = "interpolation_start",
+  [sym__interpolation_end] = "interpolation_end",
   [sym_document] = "document",
   [sym__node] = "_node",
   [sym_element] = "element",
@@ -314,11 +314,11 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .named = true,
   },
   [sym__interpolation_start] = {
-    .visible = false,
+    .visible = true,
     .named = true,
   },
   [sym__interpolation_end] = {
-    .visible = false,
+    .visible = true,
     .named = true,
   },
   [sym_document] = {
@@ -3239,7 +3239,7 @@ TS_PUBLIC const TSLanguage *tree_sitter_wxml(void) {
     .metadata = {
       .major_version = 0,
       .minor_version = 1,
-      .patch_version = 0,
+      .patch_version = 1,
     },
   };
   return &language;
