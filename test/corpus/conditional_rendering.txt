@@ -16,7 +16,9 @@ Conditional rendering
         (attribute_name)
         (quoted_attribute_value
           (interpolation
-            (expression)))))
+            (interpolation_start)
+            (expression)
+            (interpolation_end)))))
     (text)
     (end_tag
       (tag_name)))
@@ -27,7 +29,9 @@ Conditional rendering
         (attribute_name)
         (quoted_attribute_value
           (interpolation
-            (expression)))))
+            (interpolation_start)
+            (expression)
+            (interpolation_end)))))
     (text)
     (end_tag
       (tag_name)))

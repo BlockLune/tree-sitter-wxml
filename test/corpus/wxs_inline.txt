@@ -17,7 +17,9 @@ WXS inline module
       (tag_name))
     (text)
     (interpolation
-      (expression))
+      (interpolation_start)
+      (expression)
+      (interpolation_end))
     (end_tag
       (tag_name)))
   (wxs_element
@@ -34,6 +36,8 @@ WXS inline module
       (tag_name))
     (text)
     (interpolation
-      (expression))
+      (interpolation_start)
+      (expression)
+      (interpolation_end))
     (end_tag
       (tag_name))))

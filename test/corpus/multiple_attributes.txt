@@ -9,34 +9,36 @@ Multiple attributes
 ---
 
 (document
- (element
-  (start_tag
-   (tag_name)
-   (attribute
-    (attribute_name)
-    (quoted_attribute_value))
-   (attribute
-    (attribute_name)
-    (quoted_attribute_value))
-   (attribute
-    (attribute_name)
-    (quoted_attribute_value))
-   (attribute
-    (attribute_name)
-    (quoted_attribute_value
-     (interpolation
-      (expression)))))
   (element
-   (start_tag
-    (tag_name)
+    (start_tag
+      (tag_name)
+      (attribute
+        (attribute_name)
+        (quoted_attribute_value))
     (attribute
-     (attribute_name)
-     (quoted_attribute_value))
+      (attribute_name)
+      (quoted_attribute_value))
     (attribute
-     (attribute_name)
-     (quoted_attribute_value)))
-   (text)
-   (end_tag
-    (tag_name)))
+      (attribute_name)
+      (quoted_attribute_value))
+    (attribute
+      (attribute_name)
+      (quoted_attribute_value
+        (interpolation
+          (interpolation_start)
+          (expression)
+          (interpolation_end)))))
+  (element
+    (start_tag
+      (tag_name)
+      (attribute
+        (attribute_name)
+        (quoted_attribute_value))
+      (attribute
+        (attribute_name)
+        (quoted_attribute_value)))
+    (text)
+    (end_tag
+      (tag_name)))
   (end_tag
-   (tag_name))))
+    (tag_name))))

@@ -21,7 +21,9 @@ Complex list rendering
         (attribute_name)
         (quoted_attribute_value
           (interpolation
-            (expression))))
+            (interpolation_start)
+            (expression)
+            (interpolation_end))))
       (attribute
         (attribute_name)
         (quoted_attribute_value))
@@ -35,10 +37,14 @@ Complex list rendering
       (start_tag
         (tag_name))
       (interpolation
-        (expression))
+        (interpolation_start)
+        (expression)
+        (interpolation_end))
       (text)
       (interpolation
-        (expression))
+        (interpolation_start)
+        (expression)
+        (interpolation_end))
       (end_tag
         (tag_name)))
     (end_tag

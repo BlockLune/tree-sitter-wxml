@@ -17,12 +17,16 @@ Interpolation in attributes
         (attribute_name)
         (quoted_attribute_value
           (interpolation
-            (expression))))
+            (interpolation_start)
+            (expression)
+            (interpolation_end))))
       (attribute
         (attribute_name)
         (quoted_attribute_value
           (interpolation
-            (expression)))))
+            (interpolation_start)
+            (expression)
+            (interpolation_end)))))
     (element
       (start_tag
         (tag_name)
@@ -30,9 +34,13 @@ Interpolation in attributes
           (attribute_name)
           (quoted_attribute_value
             (interpolation
-              (expression)))))
+              (interpolation_start)
+              (expression)
+              (interpolation_end)))))
       (interpolation
-        (expression))
+        (interpolation_start)
+        (expression)
+        (interpolation_end))
       (end_tag
         (tag_name)))
     (element
@@ -41,6 +49,9 @@ Interpolation in attributes
           (attribute
             (attribute_name)
             (quoted_attribute_value
-              (interpolation (expression))))))
+              (interpolation
+                (interpolation_start)
+                (expression)
+                (interpolation_end))))))
     (end_tag
       (tag_name))))

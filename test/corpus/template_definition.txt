@@ -28,14 +28,18 @@ Template definition
         (start_tag
           (tag_name))
         (interpolation
-          (expression))
+          (interpolation_start)
+          (expression)
+          (interpolation_end))
         (end_tag
           (tag_name)))
       (element
         (start_tag
           (tag_name))
         (interpolation
-          (expression))
+          (interpolation_start)
+          (expression)
+          (interpolation_end))
         (end_tag
           (tag_name)))
       (end_tag
